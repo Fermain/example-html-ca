@@ -1,0 +1,84 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.dropdown summary:focus {
+  border: 1px solid var(--theme-color-blue);
+}
+
+.dropdown > nav {
+  position: absolute;
+  background-color: var(--theme-color-dark);
+  top: 3rem;
+  min-width: 10rem;
+}
+
+.dropdown:not(.dropdown-large) > nav {
+  padding: 1rem;
+}
+
+.dropdown > nav > a:first-child {
+  font-size: 150%;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.featured {
+  padding: 1rem;
+}
+
+.featured ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.dropdown .pages {
+  min-width: 20rem;
+  border-right: 1px solid var(--theme-color-muted);
+  gap: 1rem;
+}
+
+.dropdown .pages li {
+  padding-left: 1rem;
+}
+
+.dropdown .pages li:first-child a, .dropdown .pages li:hover a {
+  border-bottom: 1px dashed;
+}
+
+.featured-item h2 {
+  margin-top: 0.5rem;
+}
+
+.featured-item-img {
+  aspect-ratio: 2.5/3;
+}
+
+.featured-item img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#main-nav nav {
+  display: flex;
+  width: 100vw;
+  left: -1rem;
+}
